@@ -38,8 +38,10 @@ fun MyApp(children: @Composable() () -> Unit) {
 }
 
 @Composable
-fun MyScreenContent(names: List<String> = listOf("Android", "there"),
-                    counterState: CounterState = CounterState()) {
+fun MyScreenContent(
+    names: List<String> = listOf("Android", "there"),
+    counterState: CounterState = CounterState()
+) {
     Column(modifier = ExpandedHeight, crossAxisAlignment = CrossAxisAlignment.Center) {
         Column(modifier = Flexible(1f), crossAxisAlignment = CrossAxisAlignment.Center) {
             for (name in names) {
@@ -55,19 +57,19 @@ fun MyScreenContent(names: List<String> = listOf("Android", "there"),
 @Composable
 fun Greeting(name: String) {
     Text(
-            text = "Hello $name!",
-            modifier = Spacing(24.dp),
-            style = +themeTextStyle { h1 })
+        text = "Hello $name!",
+        modifier = Spacing(24.dp),
+        style = +themeTextStyle { h1 })
 }
 
 @Composable
 fun Counter(state: CounterState) {
     Button(
-            text = "I've been clicked ${state.count} times",
-            onClick = {
-                state.count++
-            },
-            style = ContainedButtonStyle(color = if (state.count % 2 == 0) Color.Green else Color.White)
+        text = "I've been clicked ${state.count} times",
+        onClick = {
+            state.count++
+        },
+        style = ContainedButtonStyle(color = if (state.count % 2 == 0) Color.Green else Color.White)
     )
 }
 
