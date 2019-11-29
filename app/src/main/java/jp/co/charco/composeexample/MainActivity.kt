@@ -8,6 +8,7 @@ import androidx.ui.graphics.Color
 import androidx.ui.material.surface.Surface
 import jp.co.charco.composeexample.home.HomeScreen
 import jp.co.charco.composeexample.home.ListExampleScreen
+import jp.co.charco.composeexample.home.MinimumListExampleScreen
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
                 when (NavigationManager.currentScreen) {
                     is Screen.Home -> HomeScreen()
                     is Screen.ListExample -> ListExampleScreen()
+                    is Screen.MinimumListExample -> MinimumListExampleScreen()
                 }
             }
         }

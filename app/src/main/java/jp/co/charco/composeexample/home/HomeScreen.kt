@@ -40,6 +40,9 @@ fun MyScreenContent(
         Button(text = "ListExampleScreen", onClick = {
             NavigationManager.navigateTo(Screen.ListExample)
         })
+        Button(text = "MinimumListExampleScreen", onClick = {
+            NavigationManager.navigateTo(Screen.MinimumListExample)
+        })
     }
 }
 

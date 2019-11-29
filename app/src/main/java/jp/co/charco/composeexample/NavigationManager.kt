@@ -5,6 +5,7 @@ import androidx.compose.Model
 sealed class Screen {
     object Home : Screen()
     object ListExample : Screen()
+    object MinimumListExample: Screen()
 }
 
 @Model
