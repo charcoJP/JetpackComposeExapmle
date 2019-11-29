@@ -15,6 +15,8 @@ import androidx.ui.material.ContainedButtonStyle
 import androidx.ui.material.Divider
 import androidx.ui.material.themeTextStyle
 import androidx.ui.tooling.preview.Preview
+import jp.co.charco.composeexample.NavigationManager
+import jp.co.charco.composeexample.Screen
 
 @Composable
 fun HomeScreen() {
@@ -35,6 +37,9 @@ fun MyScreenContent(
             Divider(color = Color.Transparent, height = 32.dp)
         }
         Counter(state = counterState)
+        Button(text = "ListExampleScreen", onClick = {
+            NavigationManager.navigateTo(Screen.ListExample)
+        })
     }
 }
 
