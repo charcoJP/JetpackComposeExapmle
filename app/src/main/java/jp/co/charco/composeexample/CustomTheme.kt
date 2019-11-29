@@ -18,6 +18,7 @@ import androidx.ui.text.TextStyle
 @Composable
 fun CustomTheme(children: @Composable() () -> Unit) {
     MaterialTheme(/**colors = themeColors**/) {
+        children()
 //        val textStyle = TextStyle(color = Color.Red)
 //        CurrentTextStyleProvider(value = textStyle) {
 //            children()
