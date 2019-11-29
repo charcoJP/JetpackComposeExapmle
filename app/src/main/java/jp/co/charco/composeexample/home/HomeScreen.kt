@@ -15,7 +15,6 @@ import androidx.ui.material.ContainedButtonStyle
 import androidx.ui.material.Divider
 import androidx.ui.material.themeTextStyle
 import androidx.ui.tooling.preview.Preview
-import jp.co.charco.composeexample.MyApp
 
 @Composable
 fun HomeScreen() {
