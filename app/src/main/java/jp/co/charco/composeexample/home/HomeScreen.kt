@@ -64,8 +64,6 @@ class CounterState(var count: Int = 0)
 @Preview
 @Composable
 fun DefaultPreview() {
-    MyApp {
-        MyScreenContent()
-    }
+    MyScreenContent()
 }
 
