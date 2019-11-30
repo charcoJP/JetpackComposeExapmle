@@ -7,8 +7,8 @@ import androidx.ui.core.setContent
 import androidx.ui.graphics.Color
 import androidx.ui.material.surface.Surface
 import jp.co.charco.composeexample.home.HomeScreen
-import jp.co.charco.composeexample.home.ListExampleScreen
-import jp.co.charco.composeexample.home.MinimumListExampleScreen
+import jp.co.charco.composeexample.list.ListExampleScreen
+import jp.co.charco.composeexample.list.MinimumListExampleScreen
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

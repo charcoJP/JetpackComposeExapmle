@@ -1,4 +1,4 @@
-package jp.co.charco.composeexample.home
+package jp.co.charco.composeexample.list
 
 import androidx.compose.Composable
 import androidx.ui.foundation.VerticalScroller
