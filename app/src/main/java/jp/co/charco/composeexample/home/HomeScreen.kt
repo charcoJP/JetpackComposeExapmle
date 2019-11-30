@@ -31,7 +31,7 @@ private fun MyScreenContent(
     Column(modifier = ExpandedHeight, crossAxisAlignment = CrossAxisAlignment.Center) {
         Column(modifier = Flexible(1f), crossAxisAlignment = CrossAxisAlignment.Center) {
             for (name in names) {
-                Greeting(name = name)
+                HelloWorld(name = name)
                 Divider(color = Color.Black)
             }
             Divider(color = Color.Transparent, height = 32.dp)
@@ -47,7 +47,7 @@ private fun MyScreenContent(
 }
 
 @Composable
-private fun Greeting(name: String) {
+private fun HelloWorld(name: String) {
     Text(
         text = "Hello $name!",
         modifier = Spacing(24.dp),
