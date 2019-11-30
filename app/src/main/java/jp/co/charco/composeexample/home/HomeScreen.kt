@@ -28,8 +28,8 @@ private fun MyScreenContent(
     names: List<String> = listOf("Android", "there"),
     counterState: CounterState = CounterState()
 ) {
-    Column(modifier = ExpandedHeight, crossAxisAlignment = CrossAxisAlignment.Center) {
-        Column(modifier = Flexible(1f), crossAxisAlignment = CrossAxisAlignment.Center) {
+    Column(crossAxisAlignment = CrossAxisAlignment.Center) {
+        Column(crossAxisAlignment = CrossAxisAlignment.Center) {
             for (name in names) {
                 HelloWorld(name = name)
                 Divider(color = Color.Black)
