@@ -36,13 +36,7 @@ private fun MyScreenContent(
             }
             Divider(color = Color.Transparent, height = 32.dp)
         }
-        Counter(state = counterState)
-        Button(text = "ListExampleScreen", onClick = {
-            NavigationManager.navigateTo(Screen.ListExample)
-        })
-        Button(text = "MinimumListExampleScreen", onClick = {
-            NavigationManager.navigateTo(Screen.MinimumListExample)
-        })
+        Buttons(counterState = counterState)
     }
 }
 
@@ -55,7 +49,18 @@ private fun HelloWorld(name: String) {
 }
 
 @Composable
-private fun Counter(state: CounterState) {
+private fun Buttons(counterState: CounterState) {
+    CounterButton(state = counterState)
+    Button(text = "ListExampleScreen", onClick = {
+        NavigationManager.navigateTo(Screen.ListExample)
+    })
+    Button(text = "MinimumListExampleScreen", onClick = {
+        NavigationManager.navigateTo(Screen.MinimumListExample)
+    })
+}
+
+@Composable
+private fun CounterButton(state: CounterState) {
     Button(
         text = "I've been clicked ${state.count} times",
         onClick = {
