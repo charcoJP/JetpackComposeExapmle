@@ -61,6 +61,8 @@ private fun Buttons(counterState: CounterState) {
 
 @Composable
 private fun CounterButton(state: CounterState) {
+    // state は MyScreenContent で生成されているが、再描画は実際に利用している
+    // このスコープだけ行われる
     Button(
         text = "I've been clicked ${state.count} times",
         onClick = {
