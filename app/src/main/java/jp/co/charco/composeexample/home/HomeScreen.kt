@@ -24,7 +24,7 @@ fun HomeScreen() {
 }
 
 @Composable
-fun MyScreenContent(
+private fun MyScreenContent(
     names: List<String> = listOf("Android", "there"),
     counterState: CounterState = CounterState()
 ) {
@@ -47,7 +47,7 @@ fun MyScreenContent(
 }
 
 @Composable
-fun Greeting(name: String) {
+private fun Greeting(name: String) {
     Text(
         text = "Hello $name!",
         modifier = Spacing(24.dp),
@@ -55,7 +55,7 @@ fun Greeting(name: String) {
 }
 
 @Composable
-fun Counter(state: CounterState) {
+private fun Counter(state: CounterState) {
     Button(
         text = "I've been clicked ${state.count} times",
         onClick = {
@@ -66,7 +66,7 @@ fun Counter(state: CounterState) {
 }
 
 @Model
-class CounterState(var count: Int = 0)
+private class CounterState(var count: Int = 0)
 
 @Preview
 @Composable
